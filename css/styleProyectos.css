@@ -1,8 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --border: 1px solid #DCELE4;
+    --gradient: linear-gradient(
+        -45deg, #D000F7, #24BAE3
+    );
+    --box-shadow: 5px 5px 15px #C1C8D3,
+    -5px -5px 15px #fff;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    background-color: #000;
+    color: #eee;
+    margin: 0;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--border);
+    position: relative;
+    z-index: 100;   
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+}
+
+header .logo img{
+    height: 50px;
+}
+
+header ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+header ul li{
+    padding: 0 30px;
+}
+
 .carousel{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: -75px;
     position: relative;
 }
 
@@ -197,4 +259,99 @@
 .carousel.next .arrows button,
 .carousel.prev .arrows button{
     pointer-events: none;
+}
+
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    font-family: monospace;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    z-index: 100;
+}
+
+.arrows button:hover{
+    background-color: #eee;
+    color: #555;
+}
+
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.thumbnail .item .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.thumbnail .item .content .title{
+    font-weight: bold;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.time{
+    width: 0%;
+    height: 5px;
+    background-color: #f1683a;
+    position: absolute;
+    z-index: 100;
+}
+
+.carousel.next .time,
+.carousel.prev .time{
+    width: 100%;
+    animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning{
+    to{
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .carousel .list .item .content{
+        padding-right: 0;
+    }
+    .carousel .list .item .content .title{
+        font-size: 30px;
+    }
 }
