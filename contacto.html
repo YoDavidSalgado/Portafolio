@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Salgado</title>
+    <link rel="stylesheet" href="css/styleContacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <ul class="nav">
+                <li>
+                    <span class="nav-link theme-toggle">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </span>
+                </li>
+                <li><a href="index.html">Perfil</a></li>
+                <li><a href="">Experiencia</a></li>
+                <li><a href="">Habilidades</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <div class="left">
+                    <div class="form-wrapper">
+                        <div class="contact-heading">
+                            <h1>Trabajemos juntos<span>.</span></h1>
+                            <p class="text">Enviame un correo via : <a href="mailto:yodavidsalgado@icloud.com">yodavidsalgado@icloud.com</a></p>
+                        </div>
+
+                        <form action="index.html" method="post" class="contact-form">
+                            <div class="input-wrap">
+                                <input class="contact-input" autocomplete="off" name="First Name" type="text" required>
+                                <label>Nombres</label>
+                                <i class="icon fa-solid fa-address-card"></i>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input class="contact-input" autocomplete="off" name="Last Name" type="text" required>
+                                <label>Apellidos</label>
+                                <i class="icon fa-solid fa-address-card"></i>
+                            </div>
+
+                            <div class="input-wrap w-100">
+                                <input class="contact-input" autocomplete="off" name="Email" type="email" required>
+                                <label>Correo electronico</label>
+                                <i class="icon fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div class="input-wrap textarea w-100" >
+                                <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
+                                <label>Mensaje</label>
+                                <i class="icon fa-solid fa-inbox"></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="right"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="js/appContacto.js"></script>
+</body>
+</html>
