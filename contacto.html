@@ -4,29 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Salgado</title>
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Portafolio de David Salgado, desarrollador FullStack junior">
+    <title>Portafolio de David Salgado</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <!-- <link rel="alternate" href="https://yodavidsalgado/es" hreflang="es-CO"> -->
+    <!-- <link rel="canonical" href="https://yodavidsalgado"> -->
     <link rel="stylesheet" href="css/styleContacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- OPEN GRAPH (PARA COMPARTIR EN LAS REDES SOCIALES) -->
+    <meta property="og:title" content="Portafolio de David Salgado">
+    <meta property="og:description" content="Desarrollador FullStack Junior">
+    <meta property="og:image" content="img/fotoCompartir.jpeg">
+    <meta property="og:image:alt" content="Fotografia de David Salgado de cuerpo completo">
 </head>
+
 <body>
-    
+    <div class="background"></div>
     <header>
         <div class="header-container">
-            <div class="logo">
-                <img src="img/logo.png" alt="">
-            </div>
             <ul class="nav">
+                <li class="logo">
+                    <img 
+                        src="img/logo.png" 
+                        alt="Una fotografia de David Salgado en blanco y negro de espaldas"
+                        title="Foto de David Salgado"
+                    >
+                </li>
                 <li>
                     <span class="nav-link theme-toggle">
                         <i class="fa-solid fa-sun"></i>
                         <i class="fa-solid fa-moon"></i>
                     </span>
                 </li>
-                <li><a href="index.html">Perfil</a></li>
-                <li><a href="">Experiencia</a></li>
-                <li><a href="">Habilidades</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="nav-option" href="index.html">Perfil</a></li>
+                <li><a class="nav-option" href="">Experiencia</a></li>
+                <li><a class="nav-option" href="">Habilidades</a></li>
+                <li><a class="nav-option" href="proyectos.html">Proyectos</a></li>
+                <li><a class="nav-option" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
     </header>
@@ -65,10 +82,46 @@
                                 <label>Mensaje</label>
                                 <i class="icon fa-solid fa-inbox"></i>
                             </div>
+
+                            <div class="contact-buttons">
+                                <button class="btn upload">
+                                    <span>
+                                        <i class="fa-solid fa-paperclip"></i> Agregar archivo
+                                    </span>
+                                    <input type="file" name="attachement">
+                                </button>
+                                <input type="submit" value="Enviar mensaje" class="btn">
+                            </div>
                         </form>
                     </div>
                 </div>
-                <div class="right"></div>
+                <div class="right">
+                    <div class="image-wrapper">
+                        <img 
+                            src="img/fondo1.jpg" 
+                            class="img"
+                            alt="Walpaper de planeta con destello azul"
+                            title="Planeta Tierra"
+                        >
+                        <div class="wave-wrap">
+                            <svg class="wave" viewBox="0 0 783 1536" fill="none" 
+                            xmlns="http://www.w3.org/svg">
+
+                            <path id="wave" 
+                            d="M236.705 1356.18C200.542 1483.72 64.5004 1528.54 1
+                            1535V1H770.538C793.858 63.1213 797.23 196.197 624.165 231.531C407.833 275.698
+                            274.374 331.715 450.884 568.709C627.393 805.704 510.079 815.399 347.561 939.282
+                            C185.043 1063.17 281.908 1196.74 236.705 1356.18Z"/>
+                            </svg>
+                        </div>  
+                        <svg class="dashed-wave" viewBox="0 0 345 877" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="dashed-wave"
+                                d="M0.5 876C25.6667 836.167 73.2 739.8 62 673C48 589.5 35.5
+                                499.5 125.5 462C215.5 424.5 150 365 87 333.5C24 302 44 237.5
+                                125.5 213.5C207 189.5 307 138.5 246 87C185 35.5 297 1 344.5 1"/>
+                        </svg>  
+                    </div>
+                </div>
             </div>
         </section>
     </main>

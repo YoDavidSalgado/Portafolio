@@ -124,7 +124,7 @@ header ul li{
 }
 
 .find ul li{
-    width: 100px;
+    width: 170px;
     height: 50px;
     box-shadow: var(--box-shadow);
     margin: 10px;
@@ -136,8 +136,16 @@ header ul li{
 }
 
 .find ul li:hover{
-    color: #fff;
     background-image: var(--gradient);
+}
+
+.find ul li a:hover{
+    color: #fff;
+}
+
+.find ul li .icon {
+    font-size: 30px;
+    margin-right: 5px
 }
 
 .banner .avatar img{

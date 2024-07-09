@@ -3,24 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Salgado</title>
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Portafolio de David Salgado, desarrollador FullStack Junior">
+    <title>Portafolio de David Salgado</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <!-- <link rel="alternate" href="https://yodavidsalgado/es" hreflang="es-CO"> -->
+    <!-- <link rel="canonical" href="https://yodavidsalgado"> -->
     <link rel="stylesheet" href="css/styleInicio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- OPEN GRAPH (PARA COMPARTIR EN LAS REDES SOCIALES) -->
+    <meta property="og:title" content="Portafolio de David Salgado">
+    <meta property="og:description" content="Desarrollador FullStack Junior">
+    <meta property="og:image" content="img/fotoCompartir.jpeg">
+    <meta property="og:image:alt" content="Fotografia de David Salgado de cuerpo completo">
 </head>
 <body>
     
-    <!-- Header -->
+<!-- HEADER-->
+
     <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="">
+        <div class="header-container">
+            <ul class="nav">
+                <li class="logo">
+                    <img  
+                        src="img/logo.png" 
+                        alt="Una fotografia de David Salgado en blanco y negro de espaldas"
+                        title="Foto de David Salgado"
+                    >
+                </li>  
+                <li>
+                    <span class="nav-link theme-toggle">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </span>
+                </li>
+                <li><a class="nav-option" href="index.html">Perfil</a></li>
+                <li><a class="nav-option" href="">Experiencia</a></li>
+                <li><a class="nav-option" href="">Habilidades</a></li>
+                <li><a class="nav-option" href="proyectos.html">Proyectos</a></li>
+                <li><a class="nav-option" href="contacto.html">Contacto</a></li>
+            </ul>
         </div>
-        <ul class="nav">
-            <li><a href="index.html">Perfil</a></li>
-            <li><a href="">Experiencia</a></li>
-            <li><a href="">Habilidades</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
     </header>
 
     <div class="container">
@@ -40,26 +65,51 @@
                 </h1>
 
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit quod ipsam blanditiis facilis numquam! Neque quam sed animi nemo. Quibusdam adipisci dolorem ipsam corporis ex aperiam beatae aspernatur quia perspiciatis!
+                    Como estudiante de quinto semestre en Desarrollo de Software, poseo una amplia experiencia en <strong>JAVA</strong>, <strong>C++</strong>, <strong>Python</strong> y <strong>SQL</strong>, junto con habilidades avanzadas en <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>. Estas competencias me permiten abordar de manera integral el diseño y desarrollo de soluciones tecnológicas. Mi trayectoria también abarca el uso experto de herramientas de análisis de datos como <strong>Excel</strong> y <strong>Power BI</strong>, así como la utilización de la plataforma <strong>Google Cloud</strong> para el almacenamiento y análisis de datos. Mi compromiso con la excelencia técnica me impulsa a contribuir al desarrollo de soluciones innovadoras, mientras continúo mi crecimiento como desarrollador de software centrado en los resultados. Además, poseo habilidades avanzadas en el uso de <strong>Android Studio</strong> para el desarrollo de aplicaciones móviles, lo que complementa mi perfil técnico y amplía mis capacidades para crear soluciones tecnológicas de vanguardia.
                 </p>
 
                 <div class="find">
                     <h3>CONTACTAME</h3>
                     <ul>
                         <li>
-                            <i class="fa-brands fa-linkedin-in"></i>
+                            <a  
+                                href="https://www.linkedin.com/in/yodavidsalgado/" 
+                                target="_blank"
+                            >
+                                <i 
+                                    class="icon fa-brands fa-linkedin-in" 
+                                    title="LinkedIn"></i>
+                            </a>
                         </li>
                         <li>
-                            <i class="fa-brands fa-github"></i>
+                            <a 
+                                href="https://github.com/YoDavidSalgado" 
+                                target="_blank">
+                                <i 
+                                    class="icon fa-brands fa-github" 
+                                    title="GitHub"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="icon fa-solid fa-file" title="Hoja de Vida"></i>
+                                <span>Descarga mi CV</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="avatar">
-                <img src="img/foto.png" alt="">
+                <img 
+                    src="img/foto.png" 
+                    alt="Foto de David Salgado frontal con los brazos cruzados"
+                    title="Foto de David Salgado"
+                >
             </div>
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="js/appContacto.js"></script>
 </body>
 </html>
