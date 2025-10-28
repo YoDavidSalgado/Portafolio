@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+/* Importa la fuente Poppins desde Google Fonts */
+
+body{ /* Estilos globales para el cuerpo del documento */
+    font-family: Poppins, sans-serif; /* Establece la fuente principal del sitio web a Poppins, con sans-serif como fuente de respaldo. */
+    background-color: #eaeaea; /* Define el color de fondo del cuerpo del documento a un tono gris claro (#eaeaea). */
+    color: #000; /* Establece el color del texto a negro (#000). */
+    margin: 0; /* Elimina el margen por defecto del cuerpo del documento. */
+    font-size: 15px; /* Establece el tamaño de fuente base a 15px. */
+    --gradient: linear-gradient( /* Define un degradado lineal como variable CSS */
+        -45deg, #D000F7, #24BAE3 /* Degradado de púrpura a azul */
+    );
+    --main-hue: 208; /* valor para el color principal */
+    --main-color: hsl(var(--main-hue), 92%, 54%); /* Color principal */
+    --main-color-hover: hsl(var(--main-hue), 77%, 48%); /* Variante del color principal para efectos de hover (cuando pasas el mouse). Menor saturación y luminosidad → se ve un poco más oscuro que --main-color. */
+    --light-main-color: hsl(var(--main-hue), 91%, 55%); /* Variante más clara del color principal */
+    --text-color: #000; /* Color del texto */
+    --nav-color: hsl(var(--main-hue), 17%, 79%); /* Color de la navegación */
+    --bg-color: #fff; /* Color de fondo */
+    --light-text-color: #9CA7B6; /* Color del texto en estado claro */
+    --input-bg: hsl(var(--main-hue), 50%, 50%, 6.5%); /* Color de fondo de los inputs */
+    --input-bg-hover: hsl(var(--main-hue), 50%, 50%, 14%); /* Color de fondo de los inputs en hover */
+    --input-text: #8C9AAF; /* Color del texto en los inputs */
+    --input-shadow: hsla(var(--main-hue), 92%, 54%, 0.169); /* Sombra para los inputs */
+}
+
+.dark{
+    --bg-color: hsl(var(--main-hue), 30%, 16.5%); /* Color de fondo en modo oscuro */
+    --input-bg: hsl(var(--main-hue), 22%, 50%, 11%); /* Color de fondo de los inputs en modo oscuro */
+    --input-bg-hover: hsl(var(--main-hue), 22%, 50%, 1%); /* Color de fondo de los inputs en hover en modo oscuro */
+    --light-text-color: hsl(var(--main-hue), 12%, 46%); /* Color del texto en estado claro en modo oscuro */
+    --light-text: hsl(var(--main-hue), 10%, 55%); /* Color del texto en estado claro en modo oscuro */
+    --input-shadow: hsla(var(--main-hue), 92%, 54%, 2); /* Sombra para los inputs en modo oscuro */
+    --text-color: #fff; /* Color del texto en modo oscuro */
+}

@@ -1,51 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Portafolio de David Salgado, desarrollador FullStack junior">
-    <title>David Salgado</title>
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <!-- <link rel="alternate" href="https://yodavidsalgado/es" hreflang="es-CO"> -->
-    <!-- <link rel="canonical" href="https://yodavidsalgado"> -->
-    <link rel="stylesheet" href="css/styleProyectos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!DOCTYPE html> <!-- Declara el tipo de documento. Indica que este archivo está escrito en HTML5. -->
+<html lang="es-CO"> <!-- Inicia el elemento raíz del documento HTML y establece el idioma del contenido como español de Colombia. -->
+<head> <!-- Inicia la sección de encabezado del documento, que contiene metadatos y enlaces a recursos externos. -->
+
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8, permitiendo el uso de acentos, eñes, símbolos, etc. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Asegura la compatibilidad con versiones antiguas de Internet Explorer, usando siempre el motor más moderno disponible. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsivo en dispositivos móviles, adaptando el ancho al tamaño de pantalla. -->
+    <meta name="robots" content="index, follow"> <!-- Le dice a los motores de búsqueda (como Google) que pueden indexar la página y seguir sus enlaces. -->
+    <meta name="theme-color" content="#000000"> <!-- Cambia el color del navegador en dispositivos móviles (barra superior). Aquí será negro. -->
+    <meta name="description" content="Portafolio de David Salgado, desarrollador FullStack"> <!-- Proporciona una descripción del sitio web que aparece en los resultados de búsqueda. -->
+    <meta property="og:title" content="Portafolio de David Salgado"> <!-- Título que se muestra al compartir en redes sociales -->
+    <meta property="og:description" content="Desarrollador FullStack"> <!-- Descripción que se muestra al compartir en redes sociales -->
+    <meta property="og:image" content="img/fotoCompartir.jpeg"> <!-- Imagen que se muestra al compartir en redes sociales -->
+    <meta property="og:image:alt" content="Fotografia de David Salgado de cuerpo completo"> <!-- Texto alternativo para la imagen -->
+    <title>David Salgado</title> <!-- Título de la página que aparece en la pestaña del navegador. -->
+    <link rel="icon" type="image/png" href="img/logo.png"> <!-- Icono que aparece en la pestaña del navegador. -->
+    <link rel="alternate" href="https://yodavidsalgado.com/" hreflang="es-CO"> <!-- Indica la versión en español de Colombia del sitio web. -->
+    <link rel="alternate" href="https://yodavidsalgado.com/en/" hreflang="en"> <!-- Indica la versión en inglés del sitio web. -->
+    <link rel="alternate" href="https://yodavidsalgado.com/" hreflang="x-default"> <!-- Indica la versión predeterminada del sitio web. -->
+    <link rel="canonical" href="https://yodavidsalgado.com/proyectos.html"> <!-- Indica la URL canónica para evitar contenido duplicado en SEO. -->
+    <link rel="stylesheet" href="css/styleMain.css"> <!-- Estilos principales del sitio -->
+    <link rel="stylesheet" href="css/styleHeader.css"> <!-- Estilos del encabezado -->
+    <link rel="stylesheet" href="css/styleProyectos.css"> <!-- Estilos de la sección de proyectos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- Carga los íconos de Font Awesome, que permiten usar íconos como fa-sun, fa-moon, etc. -->
     
-    <!-- OPEN GRAPH (PARA COMPARTIR EN LAS REDES SOCIALES) -->
-    <meta property="og:title" content="Portafolio de David Salgado">
-    <meta property="og:description" content="Desarrollador FullStack Junior">
-    <meta property="og:image" content="img/fotoCompartir.jpeg">
-    <meta property="og:image:alt" content="Fotografia de David Salgado de cuerpo completo">
 </head>
+
 <body>
-    
+
     <header>
-        <div class="header-container">
-            <ul class="nav">
-                <li class="logo">
+        <div class="header-container"> <!-- Contenedor del encabezado -->
+            <ul class="nav"> <!-- Lista de navegación -->
+                <li class="logo"> <!-- Elemento de la lista para el logo -->
                     <img 
-                        src="img/logo.png" 
+                        src="img/logo.png"
                         alt="Una fotografia de David Salgado en blanco y negro de espaldas"
                         title="Foto de David Salgado"
-                    >
-                </li>
-                <li>
-                    <span class="nav-link theme-toggle">
+                    > 
+                </li> 
+                <li> <!-- Elemento de la lista para el interruptor de tema -->
+                    <span class="nav-link theme-toggle"> 
                         <i class="fa-solid fa-sun"></i>
                         <i class="fa-solid fa-moon"></i>
                     </span>
                 </li>
-                <li><a class="nav-option" href="index.html">Perfil</a></li>
-                <li><a class="nav-option" href="">Experiencia</a></li>
-                <li><a class="nav-option" href="">Habilidades</a></li>
-                <li><a class="nav-option" href="proyectos.html">Proyectos</a></li>
-                <li><a class="nav-option" href="contacto.html">Contacto</a></li>
+                <li><a class="nav-option" href="index.html">Perfil</a></li> <!-- Elemento de la lista para el perfil -->
+                <li><a class="nav-option" href="">Experiencia</a></li> <!-- Elemento de la lista para la experiencia -->
+                <li><a class="nav-option" href="">Habilidades</a></li> <!-- Elemento de la lista para las habilidades -->
+                <li><a class="nav-option" href="proyectos.html">Proyectos</a></li> <!-- Elemento de la lista para los proyectos -->
+                <li><a class="nav-option" href="contacto.html">Contacto</a></li> <!-- Elemento de la lista para el contacto -->
             </ul>
         </div>
     </header>
+
 
     <!-- Carousel -->
     <div class="carousel">

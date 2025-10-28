@@ -1,0 +1,74 @@
+header { /* Definicion de la estructura y estilos del header y la navegacion */
+    width: 100%; /* Hace que se extienda a lo largo de toda la pantalla */
+    padding: 10px 0px; /* Espacio interno entre arriba y abajo, y entre los lados */
+    position: fixed; /* Fija en la ventana del navegador al hacer el scroll, no se movera */
+    top: 0; /* Posiciona el header en la parte superior de la pagina, solo funciona si la position es fixed o absolute*/
+    left: 0; /* Posiciona el header en la parte izquierda de la pagina, solo funciona si la position es fixed o absolute*/
+    z-index: 1000; /* Un z-index alto (como 1000) asegura que el header se muestre por encima de otros elementos con menor z-index o sin z-index. */
+}
+
+.header-container { /* Este es un selector de clase, es decir, aplica los estilos a cualquier elemento HTML que tenga class="header-container". */
+    width: 1140px; /*Define un ancho fijo de 1140 píxeles para el contenedor. Este es un tamaño común en diseño web responsivo para limitar el contenido a una anchura cómoda en pantallas grandes.*/
+    max-width: 50%; /* Establece que el ancho máximo no puede superar el 50% del ancho del contenedor padre. */
+    margin: auto; /* Centra el contenedor horizontalmente dentro de su elemento padre. */
+    display: flex; /* Utiliza Flexbox para el diseño del contenedor, lo que facilita la alineación y distribución de los elementos hijos. */
+    align-items: center; /* Alinea verticalmente los elementos hijos en el centro del contenedor. */
+    justify-content: space-between; /* Distribuye los elementos hijos con espacio entre ellos, colocando el primer elemento al inicio y el último al final del contenedor. */
+}
+
+header .logo img{ /* Estilos para la imagen del logo dentro del header */
+    height: 50px; /* Define una altura fija de 50 píxeles para la imagen del logo. */
+}
+
+header ul{ /* Estilos para la lista de navegacion dentro del header */
+    padding: 0; /* Elimina cualquier espacio interno predeterminado del elemento ul. */
+    list-style: none; /* Elimina los puntos de viñeta predeterminados de la lista. */
+    display: flex; /* Convierte la lista (<ul>) en un contenedor flexible (Flexbox). Esto permite colocar los elementos <li> en línea horizontal, en lugar de la columna vertical por defecto. */
+    justify-content: end; /* Alinea los elementos hijos (los <li>) al final del contenedor padre (el <ul>). */ 
+    align-items: center; /* Alinea verticalmente los elementos hijos en el centro del contenedor. */
+}
+
+header ul li{ /* Estilos para los elementos de la lista de navegacion dentro del header */
+    padding: 0px 20px; /* Agrega un espacio interno en píxeles a la izquierda y derecha de cada elemento de la lista (<li>). */
+}
+
+.nav-link { /* Estilos para los enlaces de navegacion */
+    margin-left: 0.5rem; /* Agrega un margen izquierdo de 0.5 rem (unidad relativa al tamaño de la fuente) a cada enlace de navegación. */
+    padding: 0 1rem; /* Agrega un espacio interno de 1 rem a la izquierda y derecha de cada enlace de navegación. */
+    font-weight: 600; /* Establece el grosor de la fuente a 600, lo que generalmente corresponde a un peso seminegrita. */
+    font-size: 1rem; /* Define el tamaño de la fuente a 1 rem (unidad relativa al tamaño de la fuente raíz). */
+    color: var(--nav-color); /* Establece el color del texto utilizando una variable CSS llamada --nav-color. */
+    transition: 0.3s; /* Agrega una transición suave de 0.3 segundos para cualquier cambio en las propiedades del enlace (como el color al pasar el cursor). */
+}
+
+.nav-link:hover{ /* Estilos para los enlaces de navegacion cuando se pasa el cursor sobre ellos */
+    color: var(--main-color); /* Cambia el color del texto al valor definido en la variable CSS --main-color cuando se pasa el cursor sobre el enlace. */
+}
+
+.nav-option{ /* Estilos para las opciones de navegacion */
+    color: var(--text-color); /* Establece el color del texto utilizando una variable CSS llamada --text-color. */
+}
+
+.nav-option:hover{ /* Estilos para las opciones de navegacion cuando se pasa el cursor sobre ellas */
+    color: var(--main-color); /* Cambia el color del texto al valor definido en la variable CSS --main-color cuando se pasa el cursor sobre la opción. */
+}
+
+.nav-link.theme-toggle{ /* Estilos para el boton de alternar tema en la navegacion */
+    cursor: pointer; /* Cambia el cursor a un puntero (manita) cuando se pasa sobre el boton, indicando que es clickeable. */
+} 
+
+.theme-toggle .fa-moon{ /* Estilos para el icono de luna (modo claro) dentro del boton de alternar tema */
+    display: none; /* Oculta el icono de luna por defecto. */
+}
+
+.theme-toggle .fa-sun{ /* Estilos para el icono de sol (modo claro) dentro del boton de alternar tema */
+    display: inline; /* Muestra el icono de sol por defecto. */
+}
+
+.dark .theme-toggle .fa-moon{ /* Estilos para el icono de luna (modo oscuro) cuando el tema es oscuro */
+    display: inline; /* Muestra el icono de luna cuando el tema es oscuro. */
+}
+
+.dark .theme-toggle .fa-sun{ /* Estilos para el icono de sol (modo oscuro) cuando el tema es oscuro */
+    display: none; /* Oculta el icono de sol cuando el tema es oscuro. */
+}
