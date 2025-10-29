@@ -7,6 +7,8 @@ body{ /* Estilos globales para el cuerpo del documento */
     color: #000; /* Establece el color del texto a negro (#000). */
     margin: 0; /* Elimina el margen por defecto del cuerpo del documento. */
     font-size: 15px; /* Establece el tamaño de fuente base a 15px. */
+    padding-top: env(safe-area-inset-top); /* Agrega un relleno superior para evitar que el contenido se superponga con la barra de estado en dispositivos iOS. */
+    padding-bottom: env(safe-area-inset-bottom); /* Agrega un relleno inferior para evitar que el contenido se superponga con la barra de herramientas en dispositivos iOS. */
     --gradient: linear-gradient( /* Define un degradado lineal como variable CSS */
         -45deg, #D000F7, #24BAE3 /* Degradado de púrpura a azul */
     );
