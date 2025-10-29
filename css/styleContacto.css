@@ -1,467 +1,473 @@
-
-
-.dark #dashed-wave{
-    opacity: 0.3;
+.dark #dashed-wave{ 
+    opacity: 0.3; /* Reduce la opacidad del elemento con ID "dashed-wave" en el modo oscuro */
 }
 
 .transition{
-    transition: 1s cubic-bezier(0.4, 0.1, 0.4, 1) !important;
+    transition: 1s cubic-bezier(0.4, 0.1, 0.4, 1) !important; /* Aplica una transición suave a los elementos con esta clase */
 }
-
+ 
 a{
-    text-decoration: none;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 
-.backgroud{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: hsla(var(--main-hue), 30%, 16.5%, 80%);
-    z-index: 2;
-    opacity: 0;
+.background{
+    position: fixed; /* Fija la posición del fondo */
+    width: 100%; /* Establece el ancho del fondo al 100% del viewport */
+    height: 100%; /* Establece la altura del fondo al 100% del viewport */
+    top: 0; /* Posiciona el fondo en la parte superior */
+    left: 0; /* Posiciona el fondo en la parte izquierda */
+    background-color: hsla(var(--main-hue), 30%, 16.5%, 80%); /* Color de fondo con transparencia */
+    z-index: 2; /* Establece la capa del fondo */
+    opacity: 0; /* Inicialmente oculta el fondo */
 }
 
-.dark .backgroud{
-    opacity: 1;
+.dark .background{
+    opacity: 1; /* Muestra el fondo en modo oscuro */
 }
 
 .contact{
-    width: 100%;
-    overflow: hidden;
-    background-color: var(--bg-color);
+    width: 100%; /* Establece el ancho del contenedor de contacto al 100% */
+    overflow: hidden; /* Oculta cualquier contenido que desborde el contenedor */
+    background-color: var(--bg-color); /* Aplica el color de fondo definido por la variable CSS --bg-color */
 }
 
 .contact .container{
-    height: 100vh;
-    min-height: 700px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    height: 100vh; /* Establece la altura del contenedor al 100% del viewport */
+    min-height: 700px; /* Establece una altura mínima de 700 píxeles */
+    display: grid; /* Utiliza un diseño de cuadrícula para el contenedor */
+    grid-template-columns: 1fr; /* Define una sola columna que ocupa todo el espacio disponible */
+    grid-template-rows: 1fr; /* Define una sola fila que ocupa todo el espacio disponible */
 }
 
 .contact .container > div{
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column: 1/2; /* Coloca los elementos hijos en la primera columna */
+    grid-row: 1/2; /* Coloca los elementos hijos en la primera fila */
 }
 
 .left {
-    width: 100%;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 64px 1.5rem 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    position: relative;
-    z-index: 3;
+    width: 100%; /* Establece el ancho del contenedor izquierdo al 100% */
+    max-width: 80rem; /* Establece un ancho máximo de 80 rem */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 64px 1.5rem 0; /* Agrega espacio interno en la parte superior y los lados */
+    display: grid; /* Utiliza un diseño de cuadrícula para el contenedor */
+    grid-template-columns: repeat(2, 1fr); /* Define dos columnas de igual tamaño */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    position: relative; /* Establece la posición relativa para posicionar elementos hijos absolutamente */
+    z-index: 3; /* Establece la capa del contenedor izquierdo */
 }
 
 .contact-heading h1{
-    font-weight: 600;
-    color: var(--text-color);
-    font-size: 3.5rem;
-    line-height: 0.9;
-    white-space: nowrap;
-    margin-bottom: 1.2rem;
+    font-weight: 600; /* Establece el grosor de la fuente a 600, lo que generalmente corresponde a un peso seminegrita. */
+    color: var(--text-color); /* Establece el color del texto utilizando una variable CSS llamada --text-color. */
+    font-size: 3.5rem; /* Define el tamaño de la fuente a 3.5 rem (unidad relativa al tamaño de la fuente raíz). */
+    line-height: 0.9; /* Establece la altura de línea a 0.9, lo que afecta el espacio vertical entre las líneas de texto. */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas, manteniéndolo en una sola línea. */
+    margin-bottom: 1.2rem; /* Agrega un margen inferior de 1.2 rem para separar el encabezado del contenido siguiente. */
 }
 
 .contact-heading h1 span{
-    color: var(--main-color);
+    color: var(--main-color); /* Establece el color del texto del elemento <span> utilizando una variable CSS llamada --main-color. */
 }
 
 .text{
-    color: var(--light-text-color);
-    line-height: 1.1;
-    font-size: 1rem;
+    color: var(--light-text-color); /* Establece el color del texto utilizando una variable CSS llamada --light-text-color. */
+    line-height: 1.1; /* Establece la altura de línea a 1.1, lo que afecta el espacio vertical entre las líneas de texto. */
+    font-size: 1rem; /* Define el tamaño de la fuente a 1 rem (unidad relativa al tamaño de la fuente raíz). */
 }
 
 .text a{
-    color: var(--main-color);
-    transition: 0.3s;
+    color: var(--main-color); /* Establece el color del texto del enlace utilizando una variable CSS llamada --main-color. */
+    transition: 0.3s; /* Agrega una transición suave de 0.3 segundos para cualquier cambio en las propiedades del enlace (como el color al pasar el cursor). */
 }
 
 .text a:hover{
-    color: var(--main-color-hover);
+    color: var(--main-color-hover); /* Cambia el color del texto del enlace al valor definido en la variable CSS --main-color-hover cuando se pasa el cursor sobre el enlace. */
 }
 
 .form-wrapper{
-    max-width: 32rem;
+    max-width: 32rem; /* Establece un ancho máximo de 32 rem para el contenedor del formulario. */
 }
 
 .contact-form{
-    display: grid;
-    margin-top: 2.55rem;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    row-gap: 1rem;
+    display: grid; /* Utiliza un diseño de cuadrícula para el formulario de contacto. */
+    margin-top: 2.55rem; /* Agrega un margen superior de 2.55 rem para separar el formulario del contenido anterior. */
+    grid-template-columns: repeat(2, 1fr); /* Define dos columnas de igual tamaño para el formulario. */
+    column-gap: 2rem; /* Establece un espacio entre las columnas de 2 rem. */
+    row-gap: 1rem; /* Establece un espacio entre las filas de 1 rem. */
 }
 
 .input-wrap{
-    position: relative;
+    position: relative; /* Establece la posición relativa para posicionar elementos hijos absolutamente. */
 }
 
 .input-wrap.w-100{
-    grid-column: span 2;
+    grid-column: span 2; /* Hace que el contenedor ocupe ambas columnas en la cuadrícula. */
 }
 
 .contact-input{
-    width: 100%;
-    background-color: var(--input-bg);
-    padding: 1.5rem 0rem calc(0.75rem - 2px) 1.35rem;
-    border: none;
-    outline: none;
-    font-family: inherit;
-    border-radius: 20px;
-    color: var(--text-color);
-    font-weight: 600;
-    font-size: 0.95rem;
-    border: 2px solid transparent;
-    box-shadow: 0 0 0 0px var(--input-shadow);
-    transition: 0.3s;
+    width: 100%; /* Establece el ancho del campo de entrada al 100% del contenedor padre. */
+    background-color: var(--input-bg); /* Aplica el color de fondo definido por la variable CSS --input-bg. */
+    padding: 1.5rem 0rem calc(0.75rem - 2px) 1.35rem; /* Agrega espacio interno alrededor del contenido del campo de entrada. */
+    border: none; /* Elimina el borde predeterminado del campo de entrada. */
+    outline: none; /* Elimina el contorno que aparece al enfocar el campo de entrada. */
+    font-family: inherit; /* Hereda la familia de fuentes del elemento padre. */
+    border-radius: var(--borderRadiusBox); /* Aplica bordes redondeados con un radio de 10 píxeles. */
+    color: var(--text-color); /* Establece el color del texto utilizando una variable CSS llamada --text-color. */
+    font-weight: 600; /* Establece el grosor de la fuente a 600, lo que generalmente corresponde a un peso seminegrita. */
+    font-size: 0.95rem; /* Define el tamaño de la fuente a 0.95 rem (unidad relativa al tamaño de la fuente raíz). */
+    border: 2px solid transparent; /* Establece un borde transparente de 2 píxeles para evitar el cambio de tamaño al enfocar el campo. */
+    box-shadow: 0 0 0 0px var(--input-shadow); /* Aplica una sombra al campo de entrada utilizando la variable CSS --input-shadow. */
+    transition: 0.3s; /* Agrega una transición suave de 0.3 segundos para cualquier cambio en las propiedades del campo de entrada (como el color de fondo al pasar el cursor). */
 }
 
 .contact-input:hover{
-    background-color: var(--input-bg-hover);
+    background-color: var(--input-bg-hover); /* Cambia el color de fondo del campo de entrada al valor definido en la variable CSS --input-bg-hover cuando se pasa el cursor sobre él. */
 }
 
 .input-wrap label{
-    position: absolute;
-    top: 50%;
-    left: calc(1.35rem + 2px);
-    transform: translateY(-50%);
-    color: var(--light-text-color);
-    pointer-events: none;
-    transition: .25s;
+    position: absolute; /* Posiciona el elemento label absolutamente dentro del contenedor padre. */
+    top: 50%; /* Centra verticalmente el label dentro del contenedor padre. */
+    left: calc(1.35rem + 2px); /* Posiciona el label a la izquierda con un espacio de 1.35 rem más 2 píxeles. */
+    transform: translateY(-50%); /* Ajusta la posición vertical del label para centrarlo perfectamente. */
+    color: var(--light-text-color); /* Establece el color del texto del label utilizando una variable CSS llamada --light-text-color. */
+    pointer-events: none; /* Evita que el label interfiera con los eventos del mouse, permitiendo hacer clic en el campo de entrada debajo de él. */
+    transition: .25s; /* Agrega una transición suave de 0.25 segundos para cualquier cambio en las propiedades del label (como el color al enfocar el campo). */
 }
 
 .input-wrap .icon{
-    position: absolute;
-    right: calc(0.35rem + 2px);
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-    color: var(--input-text);
-    font-size: 1.25rem;
-    transition: .3s;
+    position: absolute; /* Posiciona el icono absolutamente dentro del contenedor padre. */
+    right: calc(0.35rem + 2px); /* Posiciona el icono a la derecha con un espacio de 0.35 rem más 2 píxeles. */
+    top: 50%; /* Centra verticalmente el icono dentro del contenedor padre. */
+    transform: translateY(-50%); /* Ajusta la posición vertical del icono para centrarlo perfectamente. */
+    pointer-events: none; /* Evita que el icono interfiera con los eventos del mouse. */
+    color: var(--input-text); /* Establece el color del icono utilizando una variable CSS llamada --input-text. */
+    font-size: 1.25rem; /* Define el tamaño de la fuente del icono a 1.25 rem (unidad relativa al tamaño de la fuente raíz). */
+    transition: .3s; /* Agrega una transición suave de 0.3 segundos para cualquier cambio en las propiedades del icono (como el color al enfocar el campo). */
 }
 
 textarea.contact-input{
-    resize: none;
-    width: 100%;
-    min-height: 150px;
+    resize: none; /* Evita que el usuario pueda redimensionar el área de texto. */
+    width: 100%; /* Establece el ancho del área de texto al 100% del contenedor padre. */
+    min-height: 150px; /* Establece una altura mínima de 150 píxeles para el área de texto. */
 }
 
 textarea.contact-input ~ label{
-    top: 1.2rem;
-    transform: none;
+    top: 1.2rem; /* Ajusta la posición superior del label cuando el área de texto está en foco. */
+    transform: none; /* Elimina la transformación aplicada al label, permitiendo que se posicione según la propiedad 'top'. */
 }
 
 textarea.contact-input ~ .icon{
-    top: 1.3rem;
-    transform: none;
+    top: 1.3rem; /* Ajusta la posición superior del icono cuando el área de texto está en foco. */
+    transform: none; /* Elimina la transformación aplicada al icono, permitiendo que se posicione según la propiedad 'top'. */
 }
 
 .input-wrap.focus .contact-input{
-    background-color: var(--bg-color);
-    border: 2px solid var(--light-main-color);
-    box-shadow: 0 0 0 5px hsla(var(--main-hue), 91%, 55%, 0.11);
+    background-color: var(--bg-color); /* Cambia el color de fondo del campo de entrada al valor definido en la variable CSS --bg-color cuando el campo está en foco. */
+    border: 2px solid var(--light-main-color); /* Cambia el color del borde del campo de entrada al valor definido en la variable CSS --light-main-color cuando el campo está en foco. */
+    box-shadow: 0 0 0 5px hsla(var(--main-hue), 91%, 55%, 0.11); /* Aplica una sombra al campo de entrada utilizando un color basado en la variable CSS --main-hue cuando el campo está en foco. */
 }
 
 .input-wrap.focus label{
-    color: var(--light-main-color);
+    color: var(--light-main-color); /* Cambia el color del texto del label al valor definido en la variable CSS --light-main-color cuando el campo está en foco. */
 }
 
 .input-wrap.focus .icon{
-    color: var(--light-main-color);
+    color: var(--light-main-color); /* Cambia el color del icono al valor definido en la variable CSS --light-main-color cuando el campo está en foco. */
 }
 
 .input-wrap.not-empty label{
-    font-size: .66rem;
-    top: 0.75rem;
-    transform: translateY(0);
+    font-size: .66rem; /* Reduce el tamaño de la fuente del label cuando el campo no está vacío. */
+    top: 0.75rem; /* Ajusta la posición superior del label cuando el campo no está vacío. */
+    transform: translateY(0); /* Elimina la transformación aplicada al label, permitiendo que se posicione según la propiedad 'top'. */
 }
 
 .contact-buttons{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-    margin-top: 1rem;
-    width: 100%;
-    grid-column: span 2;
+    display: grid; /* Utiliza un diseño de cuadrícula para los botones de contacto. */
+    grid-template-columns: 1fr 1fr; /* Define dos columnas de igual tamaño para los botones. */
+    column-gap: 1rem; /* Establece un espacio entre las columnas de 1 rem. */
+    margin-top: 1rem; /* Agrega un margen superior de 1 rem para separar los botones del contenido anterior. */
+    width: 100%; /* Establece el ancho del contenedor de botones al 100%. */
+    grid-column: span 2; /* Hace que el contenedor ocupe ambas columnas en la cuadrícula. */
 }
 
 .btn{
-    display: inline-block;
-    padding: 1.1rem 2rem;
-    background-color: var(--main-color);
-    color: #fff;
-    border-radius: 40px;
-    border: none;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 1rem;    
+    display: inline-block; /* Muestra el botón como un bloque en línea. */
+    padding: 1.1rem 2rem; /* Agrega espacio interno alrededor del contenido del botón. */
+    background-color: var(--main-color); /* Aplica el color de fondo definido por la variable CSS --main-color. */
+    color: #fff; /* Establece el color del texto del botón a blanco. */
+    border-radius: var(--borderRadiusBox); /* Aplica bordes redondeados con un radio de 10 píxeles. */
+    border: none; /* Elimina el borde predeterminado del botón. */
+    font-family: inherit; /* Hereda la familia de fuentes del elemento padre. */
+    font-weight: 500; /* Establece el grosor de la fuente a 500, lo que generalmente corresponde a un peso medio. */
+    font-size: 1rem; /* Define el tamaño de la fuente a 1 rem (unidad relativa al tamaño de la fuente raíz). */
 }
 
 .btn:hover {
-    background-color: var(--main-color-hover);
+    background-color: var(--main-color-hover); /* Cambia el color de fondo del botón al valor definido en la variable CSS --main-color-hover cuando se pasa el cursor sobre él. */
 }
 
 .btn.upload {
-    position: relative;
-    background-color: var(--input-bg);
+    position: relative; /* Establece la posición relativa para posicionar elementos hijos absolutamente. */
+    background-color: var(--input-bg); /* Aplica el color de fondo definido por la variable CSS --input-bg. */
 }
 
 .btn.upload span{
-    color: var(--light-text-color);
+    color: var(--light-text-color); /* Aplica el color de texto definido por la variable CSS --light-text-color al texto del botón de carga. */
 }
 
 .btn.upload:hover{
-    background-color: var(--input-bg-hover);
+    background-color: var(--input-bg-hover); /* Cambia el color de fondo del botón de carga al valor definido en la variable CSS --input-bg-hover cuando se pasa el cursor sobre él. */
 }
 
 .btn.upload input{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    opacity: 0;
+    position: absolute; /* Posiciona el campo de entrada absolutamente dentro del contenedor padre. */
+    width: 100%; /* Establece el ancho del campo de entrada al 100% del contenedor padre. */
+    height: 100%; /* Establece la altura del campo de entrada al 100% del contenedor padre. */
+    top: 0; /* Posiciona el campo de entrada en la parte superior del contenedor padre. */
+    left: 0; /* Posiciona el campo de entrada en la parte izquierda del contenedor padre. */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el campo de entrada. */
+    opacity: 0; /* Hace que el campo de entrada sea invisible. */
 }
 
 .right{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    overflow: hidden;
-    pointer-events: none;
+    display: grid; /* Utiliza un diseño de cuadrícula para el contenedor derecho. */
+    grid-template-columns: repeat(2, 1fr); /* Define dos columnas de igual tamaño para el contenedor derecho. */
+    overflow: hidden; /* Oculta cualquier contenido que desborde el contenedor. */
+    pointer-events: none; /* Desactiva los eventos del mouse en el contenedor derecho. */
 }
 
 .image-wrapper{
-    position: relative;
-    grid-column: 2;
+    position: relative; /* Establece la posición relativa para posicionar elementos hijos absolutamente. */
+    grid-column: 2; /* Coloca el contenedor en la segunda columna de la cuadrícula. */
 }
 
 .image-wrapper .img{
-    position: absolute;
-    height: 130%;
-    left: 60%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute; /* Posiciona la imagen absolutamente dentro del contenedor padre. */
+    height: 130%; /* Establece la altura de la imagen al 130% del contenedor padre. */
+    left: 60%; /* Posiciona la imagen a la izquierda con un espacio del 60% del contenedor padre. */
+    top: 50%; /* Centra verticalmente la imagen dentro del contenedor padre. */
+    transform: translate(-50%, -50%); /* Ajusta la posición de la imagen para centrarla perfectamente. */
 }
 
 .dark .image-wrapper .img{
-    transform: translate(-50%, -50%) scale(1.7);
+    transform: translate(-50%, -50%) scale(1.7); /* Escala la imagen en un 70% adicional en modo oscuro. */
 }
 
 .wave-wrap{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 100%;
-    background-color: var(--bg-color);
-    filter: blur(0px);
+    position: absolute; /* Posiciona el contenedor de la ola absolutamente dentro del contenedor padre. */
+    width: 100%; /* Establece el ancho del contenedor de la ola al 100%. */
+    height: 100%; /* Establece la altura del contenedor de la ola al 100%. */
+    top: 0; /* Posiciona el contenedor de la ola en la parte superior del contenedor padre. */
+    right: 100%; /* Posiciona el contenedor de la ola a la derecha del contenedor padre. */
+    background-color: var(--bg-color); /* Aplica el color de fondo definido por la variable CSS --bg-color. */
+    filter: blur(0px); /* Inicialmente no aplica ningún desenfoque al contenedor de la ola. */
 }
 
 .wave-wrap svg{
-    position: absolute;
-    height: calc(100% + 10px);
-    top: 50%;
-    transform: translateY(-50%) scaleX(1);
-    left: calc(100% - 2px);
-    transform-origin: left;
+    position: absolute; /* Posiciona el SVG absolutamente dentro del contenedor de la ola. */
+    height: calc(100% + 10px); /* Establece la altura del SVG al 100% del contenedor de la ola más 10 píxeles adicionales. */
+    top: 50%; /* Centra verticalmente el SVG dentro del contenedor de la ola. */
+    transform: translateY(-50%) scaleX(1); /* Ajusta la posición del SVG para centrarlo perfectamente y lo escala horizontalmente al 100%. */
+    left: calc(100% - 2px); /* Posiciona el SVG a la izquierda del contenedor de la ola con un espacio de 2 píxeles menos del 100%. */
+    transform-origin: left; /* Establece el origen de la transformación del SVG en el lado izquierdo. */
 }
 
 #wave{
-    fill: var(--bg-color);
-    height: 100%;
+    fill: var(--bg-color); /* Aplica el color de relleno definido por la variable CSS --bg-color al SVG de la ola. */
+    height: 100%; /* Establece la altura del SVG de la ola al 100% del contenedor padre. */
 }
 
 .dark .wave-wrap svg{
-    transform: translateY(-50%) scaleX(0);
+    transform: translateY(-50%) scaleX(0); /* Escala el SVG horizontalmente a 0 en modo oscuro, haciéndolo invisible. */
 }
 
 .dark .wave-wrap{
-    transform: scale(1.8);
-    filter: blur(55px);
+    transform: scale(1.8); /* Escala el contenedor de la ola en un 80% adicional en modo oscuro. */
+    filter: blur(55px); /* Aplica un desenfoque de 55 píxeles al contenedor de la ola en modo oscuro. */
 }
 
 .dashed-wave{
-    position: absolute;
-    z-index: 3;
-    height: 130%;
-    bottom: 60%;
-    left: -28px;
-    transform: translateY(50%);
+    position: absolute; /* Posiciona el contenedor de la ola punteada absolutamente dentro del contenedor padre. */
+    z-index: 3; /* Establece la capa del contenedor de la ola punteada. */
+    height: 130%; /* Establece la altura del contenedor de la ola punteada al 130% del contenedor padre. */
+    bottom: 60%; /* Posiciona el contenedor de la ola punteada en la parte inferior con un espacio del 60% del contenedor padre. */
+    left: -28px; /* Posiciona el contenedor de la ola punteada a la izquierda con un espacio de -28 píxeles del contenedor padre. */
+    transform: translateY(50%); /* Ajusta la posición del contenedor de la ola punteada para centrarlo verticalmente. */
 }
 
 #dashed-wave{
-    fill: none;
-    stroke: var(--nav-color);
-    stroke-width: 1px;
-    stroke-dasharray: 6.5;
-    opacity: 0.8;
+    fill: none; /* Elimina el color de relleno del SVG de la ola punteada. */
+    stroke: var(--nav-color); /* Aplica el color del trazo definido por la variable CSS --nav-color al SVG de la ola punteada. */
+    stroke-width: 1px; /* Establece el grosor del trazo del SVG de la ola punteada a 1 píxel. */
+    stroke-dasharray: 6.5; /* Define un patrón de línea discontinua para el trazo del SVG de la ola punteada, con segmentos de 6.5 píxeles. */
+    opacity: 0.8; /* Establece la opacidad del SVG de la ola punteada al 80%. */
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px){ /* Ajustes para pantallas con un ancho máximo de 1000 píxeles */
     .logo{
-        margin-right: 1rem;
+        margin-right: 1rem; /* Reduce el margen derecho del logo a 1 rem */
     }
 
     .logo img{
-        height: 30px;
-        margin-right: 0.7rem;
+        height: 30px; /* Reduce la altura de la imagen del logo a 30 píxeles */
+        margin-right: 0.7rem; /* Reduce el margen derecho de la imagen del logo a 0.7 rem */
     }
 
     .logo h2{
-        font-size: 1.3rem;
+        font-size: 1.3rem; /* Reduce el tamaño de la fuente del texto del logo a 1.3 rem */
     }
 
     .nav-link{
-        margin-left: 3.5rem;
-        padding: 0 0.8rem;
-        font-size: 0.9rem;
+        margin-left: 3.5rem; /* Reduce el margen izquierdo de los enlaces de navegación a 3.5 rem */
+        padding: 0 0.8rem; /* Agrega un relleno horizontal de 0.8 rem a los enlaces de navegación */
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente de los enlaces de navegación a 0.9 rem */
     }
 
     .nav-link.theme-toggle{
-        font-size: 1rem;
+        font-size: 1rem; /* Establece el tamaño de la fuente del enlace de cambio de tema a 1 rem */
     }
 
     .contact-heading h1{
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        white-space: normal;
+        font-size: 2.5rem; /* Reduce el tamaño de la fuente del encabezado de contacto a 2.5 rem */
+        margin-bottom: 1rem; /* Reduce el margen inferior del encabezado de contacto a 1 rem */
+        white-space: normal; /* Permite que el texto del encabezado de contacto se divida en varias líneas si es necesario */
     }
 
     .text{
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente del texto a 0.9 rem */
     }
 
     .contact-form{
-        display: grid;
-        margin-top: 1.9rem;
-        column-gap: 0.8rem;
-        row-gap: 0.65rem;
+        display: grid; /* Utiliza un diseño de cuadrícula para el formulario de contacto */
+        margin-top: 1.9rem; /* Reduce el margen superior del formulario de contacto a 1.9 rem */
+        column-gap: 0.8rem; /* Reduce el espacio entre las columnas del formulario de contacto a 0.8 rem */
+        row-gap: 0.65rem; /* Reduce el espacio entre las filas del formulario de contacto a 0.65 rem */
     }
 
     .contact-input{
-        border-radius: 17px;
-        font-size: 0.87rem;
-        padding: 1.5rem 1.2rem calc(0.75rem -2px) 1.2rem;
+        border-radius: 17px; /* Aumenta el radio de los bordes del campo de entrada a 17 píxeles */
+        font-size: 0.87rem; /* Reduce el tamaño de la fuente del campo de entrada a 0.87 rem */
+        padding: 1.5rem 1.2rem calc(0.75rem -2px) 1.2rem; /* Ajusta el relleno del campo de entrada */
     }
 
     .input-wrap label{
-        font-size: 0.91rem;
-        left: calc(1.2rem + 2px);
+        font-size: 0.91rem; /* Reduce el tamaño de la fuente del label a 0.91 rem */
+        left: calc(1.2rem + 2px); /* Ajusta la posición izquierda del label */
     }
 
     .input-wrap .icon{
-        font-size: 1.1rem;
-        right: calc(1.2rem + 2px);
+        font-size: 1.1rem; /* Reduce el tamaño de la fuente del icono a 1.1 rem */
+        right: calc(1.2rem + 2px); /* Ajusta la posición derecha del icono */
     }
 
     textarea.contact-input ~ label{
-        top: 1.2rem;
+        top: 1.2rem; /* Ajusta la posición superior del label asociado al textarea */
     }
 
     textarea.contact-input ~ .icon{
-        top: 1.33rem;
+        top: 1.33rem; /* Ajusta la posición superior del icono asociado al textarea */
     }
 
     .input-wrap.focus .contact-input{
-        box-shadow: 0 0 0 3.5px var(--input-shadow);
+        box-shadow: 0 0 0 3.5px var(--input-shadow); /* Reduce el tamaño de la sombra del campo de entrada en foco */
     }
 
     .input-wrap.not-empty label{
-        font-size: 0.61rem;
+        font-size: 0.61rem; /* Reduce el tamaño de la fuente del label cuando el campo de entrada no está vacío */
     }
 
     .contact-buttons{
-        column-gap: 0.8rem;
-        margin-top: 0.45rem;
+        column-gap: 0.8rem; /* Reduce el espacio entre las columnas de los botones de contacto a 0.8 rem */
+        margin-top: 0.45rem; /* Reduce el margen superior de los botones de contacto a 0.45 rem */
     }
 
     .btn{
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.5rem; /* Ajusta el relleno de los botones */
     }
 
     .dashed-wave {
-        bottom: 55%;
-        left: -10%;
+        bottom: 55%; /* Ajusta la posición inferior de la ola punteada */
+        left: -10%; /* Ajusta la posición izquierda de la ola punteada */
     }
 
     #dashed-wave{
-        stroke-width: 0.7px;
-        stroke-dasharray: 6;
+        stroke-width: 0.7px; /* Reduce el grosor del trazo de la ola punteada a 0.7 píxeles */
+        stroke-dasharray: 6; /* Ajusta el patrón de línea discontinua del trazo de la ola punteada a segmentos de 6 píxeles */
     }
 
     .wave-wrap {
-        transform: translateX(-10%);
+        transform: translateX(-10%); /* Ajusta la posición horizontal del contenedor de la ola */
     }
 
     .wave-wrap svg{
-        height: calc(110% + 10px);
-        transform: translate(-5%, -50%);
+        height: calc(110% + 10px); /* Ajusta la altura del SVG de la ola */
+        transform: translate(-5%, -50%); /* Ajusta la posición del SVG de la ola */
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px){ /* Ajustes para pantallas con un ancho máximo de 650 píxeles */
     header .container {
-        height: 50px;
+        height: 50px; /* Reduce la altura del contenedor del encabezado a 50 píxeles */
     }
 
     .left{
-        padding: 50px 1.5rem 0;
-        grid-template-columns: 1fr;
-        justify-items: center;
+        padding: 50px 1.5rem 0; /* Reduce el relleno superior del contenedor izquierdo a 50 píxeles */
+        grid-template-columns: 1fr; /* Cambia el diseño de cuadrícula a una sola columna */
+        justify-items: center; /* Centra los elementos horizontalmente */
     }
 
     .form-wrapper{
-        width: 100%;
-        padding: 1rem 0;
+        width: 100%; /* Establece el ancho del contenedor del formulario al 100% */
+        padding: 1rem 0; /* Agrega un relleno vertical de 1 rem */
     }
 
     header ul{
-        justify-content: space-between;
-        width: 100%;
+        justify-content: space-between; /* Distribuye los elementos del menú de navegación con espacio entre ellos */
+        width: 100%; /* Establece el ancho del menú de navegación al 100% */
     }
 
     .logo{
-        margin-right: 0;
+        margin-right: 0; /* Elimina el margen derecho del logo */
     }
 
     .nav-link{
-        margin-left: 0;
+        margin-left: 0; /* Elimina el margen izquierdo de los enlaces de navegación */
     }
 
     .right{
-        display: none;
+        display: none; /* Oculta el contenedor derecho */
     }
 }
 
 @media (max-width: 440px){
+    .left{
+        padding: 40px 0.8rem 0; /* Reduce el relleno superior del contenedor izquierdo a 40 píxeles y los laterales a 0.8 rem */
+    }
+
+    .text{
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente del texto a 0.8 rem */
+    }
+
     .input-wrap{
-        grid-column: span 2;
+        grid-column: span 2; /* Hace que el contenedor ocupe ambas columnas en la cuadrícula */
     }
 
     .contact-buttons{
-        grid-template-columns: 1fr;
-        row-gap: 0.5rem;
+        grid-template-columns: 1fr; /* Cambia el diseño de cuadrícula de los botones de contacto a una sola columna */
+        row-gap: 0.5rem; /* Agrega un espacio entre las filas de los botones de contacto de 0.5 rem */
     }
 
     .contact-heading h1{
-        font-size: 1.9rem;
-        line-height: 1;
+        font-size: 1.9rem;  /* Reduce el tamaño de la fuente del encabezado de contacto a 1.9 rem */
+        line-height: 1; /* Establece la altura de línea del encabezado de contacto a 1 */
     }
 
     .logo img{
-        height: 25px;
-        margin-right: 0.7rem;
+        height: 25px; /* Reduce la altura de la imagen del logo a 25 píxeles */
+        margin-right: 0.7rem; /* Mantiene el margen derecho de la imagen del logo en 0.7 rem */
     }
 
     .logo h2{
-        font-size: 1.15rem;
+        font-size: 1.15rem; /* Reduce el tamaño de la fuente del texto del logo a 1.15 rem */
     }
 }
