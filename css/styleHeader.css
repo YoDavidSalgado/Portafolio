@@ -9,7 +9,7 @@ header { /* Definicion de la estructura y estilos del header y la navegacion */
 
 .header-container { /* Este es un selector de clase, es decir, aplica los estilos a cualquier elemento HTML que tenga class="header-container". */
     width: 1140px; /*Define un ancho fijo de 1140 píxeles para el contenedor. Este es un tamaño común en diseño web responsivo para limitar el contenido a una anchura cómoda en pantallas grandes.*/
-    max-width: 50%; /* Establece que el ancho máximo no puede superar el 50% del ancho del contenedor padre. */
+    max-width: max-content; /* Establece el ancho máximo del contenedor al valor máximo del contenido que contiene. Esto significa que el contenedor no se expandirá más allá del tamaño necesario para alojar su contenido. */
     margin: auto; /* Centra el contenedor horizontalmente dentro de su elemento padre. */
     display: flex; /* Utiliza Flexbox para el diseño del contenedor, lo que facilita la alineación y distribución de los elementos hijos. */
     align-items: center; /* Alinea verticalmente los elementos hijos en el centro del contenedor. */
@@ -18,6 +18,7 @@ header { /* Definicion de la estructura y estilos del header y la navegacion */
 
 header .logo img{ /* Estilos para la imagen del logo dentro del header */
     height: 50px; /* Define una altura fija de 50 píxeles para la imagen del logo. */
+    display: block; /* Convierte la imagen en un elemento de bloque, lo que elimina cualquier espacio en línea adicional que pueda aparecer alrededor de la imagen. */
 }
 
 header ul{ /* Estilos para la lista de navegacion dentro del header */
