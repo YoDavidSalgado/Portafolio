@@ -6,7 +6,7 @@
         -45deg, #D000F7, #24BAE3
     );
     --box-shadow: 5px 5px 15px #C1C8D3,
-    -5px -5px 15px #fff;
+    -5px -5px 15px #fff; /* Define una sombra para cajas como variable CSS llamada --box-shadow. La sombra tiene dos partes: una sombra oscura desplazada 5 píxeles a la derecha y hacia abajo, y una sombra clara desplazada 5 píxeles a la izquierda y hacia arriba. */
 }
 
 a{

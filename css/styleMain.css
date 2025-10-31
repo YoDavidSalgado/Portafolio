@@ -6,31 +6,30 @@
 }
 
 body{ /* Estilos globales para el cuerpo del documento */
-    font-family: Poppins, sans-serif; /* Establece la fuente principal del sitio web a Poppins, con sans-serif como fuente de respaldo. */
-    background-color: #eaeaea; /* Define el color de fondo del cuerpo del documento a un tono gris claro (#eaeaea). */
-    color: #000; /* Establece el color del texto a negro (#000). */
-    margin: 0; /* Elimina el margen por defecto del cuerpo del documento. */
-    font-size: 15px; /* Establece el tamaño de fuente base a 15px. */
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
     --borderRadiusBox: 10px; /* Define un borde de 10 píxeles como variable CSS */
-    --gradient: linear-gradient( /* Define un degradado lineal como variable CSS */
-        -45deg, #D000F7, #24BAE3 /* Degradado de púrpura a azul */
-    );
+    --gradient: linear-gradient( -45deg, #D000F7, #24BAE3 ); /* Define un gradiente lineal como variable CSS */
     --main-hue: 208; /* valor para el color principal */
     --main-color: hsl(var(--main-hue), 92%, 54%); /* Color principal */
     --main-color-hover: hsl(var(--main-hue), 77%, 48%); /* Variante del color principal para efectos de hover (cuando pasas el mouse). Menor saturación y luminosidad → se ve un poco más oscuro que --main-color. */
     --light-main-color: hsl(var(--main-hue), 91%, 55%); /* Variante más clara del color principal */
     --text-color: #000; /* Color del texto */
     --nav-color: hsl(var(--main-hue), 17%, 79%); /* Color de la navegación */
-    --bg-color: #fff; /* Color de fondo */
+    --bg-color: #eaeaea; /* Color de fondo */
     --light-text-color: #9CA7B6; /* Color del texto en estado claro */
     --input-bg: hsl(var(--main-hue), 50%, 50%, 6.5%); /* Color de fondo de los inputs */
     --input-bg-hover: hsl(var(--main-hue), 50%, 50%, 14%); /* Color de fondo de los inputs en hover */
     --input-text: #8C9AAF; /* Color del texto en los inputs */
     --input-shadow: hsla(var(--main-hue), 92%, 54%, 0.169); /* Sombra para los inputs */
+
+    font-family: Poppins, sans-serif; /* Establece la fuente principal del sitio web a Poppins, con sans-serif como fuente de respaldo. */
+    background-color: var(--bg-color); /* Define el color de fondo del cuerpo del documento a un tono gris claro (#eaeaea). */
+    color: #000; /* Establece el color del texto a negro (#000). */
+    margin: 0; /* Elimina el margen por defecto del cuerpo del documento. */
+    font-size: 15px; /* Establece el tamaño de fuente base a 15px. */
+    padding-top: env(safe-area-inset-top); /* Agrega un relleno superior según el área segura del dispositivo. */
+    padding-bottom: env(safe-area-inset-bottom); /* Agrega un relleno inferior según el área segura del dispositivo. */
+    padding-left: env(safe-area-inset-left); /* Agrega un relleno izquierdo según el área segura del dispositivo. */
+    padding-right: env(safe-area-inset-right); /* Agrega un relleno derecho según el área segura del dispositivo. */
 }
 
 .dark{
