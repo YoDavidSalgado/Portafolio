@@ -411,14 +411,13 @@ textarea.contact-input ~ .icon{
     }
 
     .left{
-        padding: 50px 1.5rem 0; /* Reduce el relleno superior del contenedor izquierdo a 50 píxeles */
+        padding: 0 1.5rem 0; /* Reduce el relleno superior del contenedor izquierdo a 50 píxeles */
         grid-template-columns: 1fr; /* Cambia el diseño de cuadrícula a una sola columna */
         justify-items: center; /* Centra los elementos horizontalmente */
     }
 
     .form-wrapper{
-        width: 100%; /* Establece el ancho del contenedor del formulario al 100% */
-        padding: 1rem 0; /* Agrega un relleno vertical de 1 rem */
+        padding: 0; /* Elimina el relleno del contenedor del formulario */
     }
 
     header ul{
@@ -441,15 +440,25 @@ textarea.contact-input ~ .icon{
 
 @media (max-width: 440px){
     .left{
-        padding: 40px 0.8rem 0; /* Reduce el relleno superior del contenedor izquierdo a 40 píxeles y los laterales a 0.8 rem */
+        padding: 40px 0; /* Reduce el relleno superior del contenedor izquierdo a 40 píxeles y los laterales a 0.8 rem */
     }
 
     .text{
         font-size: 0.8rem; /* Reduce el tamaño de la fuente del texto a 0.8 rem */
     }
 
+    .form-wrapper {
+        width: 100%;
+        max-width: none;
+        padding: 0 1rem; /* Agrega un relleno horizontal de 1 rem al contenedor del formulario */
+    }
+
     .input-wrap{
         grid-column: span 2; /* Hace que el contenedor ocupe ambas columnas en la cuadrícula */
+    }
+
+    .contact-input{
+        margin-right: 0; /* Ajusta el relleno del campo de entrada */
     }
 
     .contact-buttons{
