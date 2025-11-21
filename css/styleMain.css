@@ -30,6 +30,15 @@ body{ /* Estilos globales para el cuerpo del documento */
     padding-bottom: env(safe-area-inset-bottom); /* Agrega un relleno inferior según el área segura del dispositivo. */
     padding-left: env(safe-area-inset-left); /* Agrega un relleno izquierdo según el área segura del dispositivo. */
     padding-right: env(safe-area-inset-right); /* Agrega un relleno derecho según el área segura del dispositivo. */
+
+    --border: 1px solid #DCELE4; /* Define un borde sólido de 1 píxel de grosor con el color #DCELE4 como variable CSS llamada --border. */
+    --gradient: linear-gradient( -45deg, #D000F7, #24BAE3 ); /* Define un gradiente lineal que va en un ángulo de -45 grados desde el color #D000F7 hasta el color #24BAE3 como variable CSS llamada --gradient. */
+    --box-shadow: 5px 5px 15px #C1C8D3, -5px -5px 15px #fff; /* Define una sombra para cajas como variable CSS llamada --box-shadow. La sombra tiene dos partes: una sombra oscura desplazada 5 píxeles a la derecha y hacia abajo, y una sombra clara desplazada 5 píxeles a la izquierda y hacia arriba. */
+}
+
+a{
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces. */
+    color: #000; /* Establece el color del texto de los enlaces a negro (#000). */
 }
 
 .dark{

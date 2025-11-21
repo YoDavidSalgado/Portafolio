@@ -5,10 +5,6 @@
 .transition{
     transition: 1s cubic-bezier(0.4, 0.1, 0.4, 1) !important; /* Aplica una transición suave a los elementos con esta clase */
 }
- 
-a{
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-}
 
 .background{
     position: fixed; /* Fija la posición del fondo */

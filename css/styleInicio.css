@@ -1,134 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root{
-    --border: 1px solid #DCELE4; /* Define un borde sólido de 1 píxel de grosor con el color #DCELE4 como variable CSS llamada --border. */
-    --gradient: linear-gradient(
-        -45deg, #D000F7, #24BAE3
-    );
-    --box-shadow: 5px 5px 15px #C1C8D3,
-    -5px -5px 15px #fff; /* Define una sombra para cajas como variable CSS llamada --box-shadow. La sombra tiene dos partes: una sombra oscura desplazada 5 píxeles a la derecha y hacia abajo, y una sombra clara desplazada 5 píxeles a la izquierda y hacia arriba. */
-}
-
-a{
-    text-decoration: none;
-    color: #000;
-}
-
 .banner{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    border-bottom: var(--border);
-    padding-bottom: 50px;
+    display: grid; /* Convierte el contenedor del banner en un contenedor de cuadrícula (grid). */
+    grid-template-columns: 60% 40%; /* Define dos columnas en la cuadrícula: la primera columna ocupa el 70% del ancho disponible y la segunda columna ocupa el 30%. */
+    border-bottom: var(--border); /* Aplica el borde definido en la variable CSS --border al borde inferior del contenedor del banner. */
+    padding: 50px; /* Agrega un espacio de 50 píxeles debajo del contenido del banner. */
+    min-height: calc(100vh); /* Establece la altura mínima del contenedor del banner para que sea igual a la altura completa de la ventana gráfica (viewport). */
+    align-items: center; /* opcional, centra verticalmente si lo necesitas */
 }
 
 .banner .content{
-    text-align: justify;
-    padding-right: 50px;
+    text-align: justify; /* Justifica el texto dentro del contenedor de contenido del banner, alineando ambos lados del texto con los márgenes izquierdo y derecho. */
+    padding-right: 50px; /* Agrega un espacio de 70 píxeles a la derecha del contenido dentro del contenedor del banner. */
+    padding-left: 50px; /* Agrega un espacio de 70 píxeles a la izquierda del contenido dentro del contenedor del banner. */
 }
 
 .banner .content h1{
-    font-size: 3.5em;
-    margin: 0;
+    font-size: 3.5em; /* Establece el tamaño de la fuente del encabezado h1 dentro del contenedor de contenido del banner a 3.5 veces el tamaño de la fuente base. */
+    margin: 0; /* Elimina el margen predeterminado alrededor del encabezado h1. */
 }
 
 .gradientText{
-    display: inline-block;
-    background-image: var(--gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    display: inline-block; /* Convierte el contenedor del texto con efecto de degradado en un elemento de bloque en línea, lo que permite aplicar estilos de bloque mientras se mantiene en línea con el texto circundante. */
+    background-image: var(--gradient); /* Aplica el gradiente definido en la variable CSS --gradient como fondo del contenedor del texto con efecto de degradado. */
+        -webkit-background-clip: text; /* Utiliza la propiedad -webkit-background-clip para recortar el fondo al área del texto, lo que permite que el gradiente se aplique solo al texto. */
+        -webkit-text-fill-color: transparent; /* Hace que el color del texto sea transparente, permitiendo que el fondo (el gradiente) sea visible a través del texto. */
 }
 
-.job::before{
-    content: attr(data-job1);
-    overflow: hidden;
-    display: inline-flex;
-    animation: 
-        effectText 1s linear infinite alternate,
-        changeText 4s linear infinite
+.job::before{ /* Utiliza el pseudo-elemento ::before para insertar contenido antes del contenido real del elemento con la clase "job". */
+    content: attr(data-job1); /* Inserta el contenido del atributo personalizado data-job1 como el contenido del pseudo-elemento ::before. */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor del pseudo-elemento ::before. */
+    display: inline-flex; /* Convierte el pseudo-elemento ::before en un contenedor flexible en línea, lo que permite alinear y distribuir su contenido de manera flexible. */
+    animation: /* Aplica dos animaciones al pseudo-elemento ::before: */
+        effectText 1s linear infinite alternate, /* La animación effectText dura 1 segundo, utiliza una función de tiempo lineal, se repite infinitamente y alterna entre los estados inicial y final. */
+        changeText 4s linear infinite ; /* La animación changeText dura 4 segundos, utiliza una función de tiempo lineal y se repite infinitamente. */
 }
 
-@keyframes effectText{
-    from{
-        max-width: 0;
-    }to{
-        max-width: 500px;
+@keyframes effectText{ /* Define la animación llamada effectText */
+    from{ /* Estado inicial de la animación */
+        max-width: 0; /* Establece el ancho máximo del pseudo-elemento ::before a 0, ocultando así el texto. */
+    }to{ /* Estado final de la animación */
+        max-width: 500px; /* Establece el ancho máximo del pseudo-elemento ::before a 500 píxeles, revelando así el texto. */
     }
 }
 
-@keyframes changeText{
-    0%{
-        content: attr(data-job1);
-    }100%{
-        content: attr(data-job2);
+@keyframes changeText{ /* Define la animación llamada changeText */
+    0%{ /* Estado inicial de la animación */
+        content: attr(data-job1); /* Inserta el contenido del atributo personalizado data-job1 como el contenido del pseudo-elemento ::before. */
+    }100%{ /* Estado final de la animación */
+        content: attr(data-job3); /* Inserta el contenido del atributo personalizado data-job3 como el contenido del pseudo-elemento ::before. */
     }
 }
 
 .find{
-    margin-top: 50px;
+    margin-top: 50px; /* Agrega un margen superior de 50 píxeles al contenedor con la clase "find". */
 }
 
 .find ul{
-    padding: 0;
-    list-style: none;
-    display: flex;
+    padding: 0; /* Elimina cualquier espacio interno predeterminado del elemento ul. */
+    list-style: none; /* Elimina los estilos de lista predeterminados del elemento ul. */
+    display: flex; /* Utiliza un contenedor flexible para los elementos de la lista, permitiendo una disposición en línea. */
 }
 
 .find ul li{
-    width: 170px;
-    height: 50px;
-    box-shadow: var(--box-shadow);
-    margin: 10px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
+    width: 170px; /* Establece un ancho fijo de 170 píxeles para cada elemento de la lista dentro del contenedor con la clase "find". */
+    height: 50px; /* Establece una altura fija de 50 píxeles para cada elemento de la lista dentro del contenedor con la clase "find". */
+    box-shadow: var(--box-shadow); /* Aplica la sombra definida en la variable CSS --box-shadow a cada elemento de la lista. */
+    margin: 10px; /* Agrega un margen de 10 píxeles alrededor de cada elemento de la lista. */
+    border-radius: 10px; /* Aplica un borde redondeado de 10 píxeles a cada elemento de la lista. */
+    display: flex; /* Utiliza un contenedor flexible para cada elemento de la lista, permitiendo una disposición en línea de su contenido. */
+    justify-content: center; /* Centra horizontalmente el contenido dentro de cada elemento de la lista. */
+    align-items: center; /* Centra verticalmente el contenido dentro de cada elemento de la lista. */
+    transition: 0.5s; /* Aplica una transición suave de 0.5 segundos para cualquier cambio en las propiedades del elemento de la lista. */
 }
 
 .find ul li:hover{
-    background-image: var(--gradient);
+    background-image: var(--gradient); /* Aplica el gradiente definido en la variable CSS --gradient como fondo del elemento de la lista cuando se pasa el cursor sobre él. */
 }
 
 .find ul li a:hover{
-    color: #fff;
+    color: #fff; /* Cambia el color del texto del enlace a blanco (#fff) cuando se pasa el cursor sobre el elemento de la lista. */
 }
 
 .find ul li .icon {
-    font-size: 30px;
-    margin-right: 5px
+    font-size: 30px; /* Establece el tamaño de la fuente del icono dentro del elemento de la lista a 30 píxeles. */
+    margin-right: 5px; /* Agrega un margen derecho de 5 píxeles al icono dentro del elemento de la lista. */
 }
 
 .banner .avatar img{
-    width: 90%;
+    width: 90%; /* Establece el ancho de la imagen del avatar dentro del contenedor del banner al 90% del ancho del contenedor padre. */
 }
 
 .banner .avatar{
-    text-align: center;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: end;
+    text-align: center; /* Centra el contenido de texto dentro del contenedor del avatar. */
+    position: relative; /* Establece la posición del contenedor del avatar como relativa, lo que permite posicionar elementos hijos de manera absoluta en relación con este contenedor. */
+    display: flex; /* Utiliza un contenedor flexible para el contenedor del avatar, permitiendo una disposición en línea de su contenido. */
+    justify-content: center; /* Centra horizontalmente el contenido dentro del contenedor del avatar. */
+    align-items: end; /* Alinea verticalmente el contenido al final dentro del contenedor del avatar. */
 }
 
 .banner .avatar::before{
-    position: absolute;
-    width: 90%;
-    height: 80%;
-    box-shadow: var(--box-shadow);
-    content: '';
-    bottom: 0;
-    z-index: -1;
+    position: absolute; /* Establece la posición del pseudo-elemento ::before como absoluta, permitiendo posicionarlo en relación con el contenedor del avatar. */
+    width: 90%; /* Establece el ancho del pseudo-elemento ::before al 90% del ancho del contenedor padre (el contenedor del avatar). */
+    height: 80%; /* Establece la altura del pseudo-elemento ::before al 80% de la altura del contenedor padre (el contenedor del avatar). */
+    box-shadow: var(--box-shadow); /* Aplica la sombra definida en la variable CSS --box-shadow al pseudo-elemento ::before. */
+    content: ''; /* Define un contenido vacío para el pseudo-elemento ::before, lo que es necesario para que se renderice. */
+    bottom: 0; /* Posiciona el pseudo-elemento ::before en la parte inferior del contenedor del avatar. */
+    z-index: -1; /* Establece el índice z del pseudo-elemento ::before a -1, lo que lo coloca detrás del contenido principal del contenedor del avatar. */ 
 }
 
-@media screen and (max-width: 1024px){
-    .banner .content h1{
-        font-size: 1.5em;
+@media screen and (max-width: 1024px){ /* Media query para pantallas con un ancho máximo de 1024 píxeles */
+    .banner .content h1{ /* Estilos para el encabezado h1 dentro del contenedor .content en el banner */
+        font-size: 1.5em; /* Establece el tamaño de la fuente del encabezado h1 a 1.5 veces el tamaño de la fuente base. */
     }
 }
 
-@media screen and (max-width: 767px){
-    .banner{
-        grid-template-columns: 1fr;
+@media screen and (max-width: 767px){ /* Media query para pantallas con un ancho máximo de 767 píxeles */
+    .banner{ /* Estilos para el contenedor .banner */
+        grid-template-columns: 1fr; /* Cambia la plantilla de columnas a una sola columna que ocupa todo el ancho disponible. */
     }
 }
 
