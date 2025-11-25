@@ -2,7 +2,7 @@
     display: grid; /* Convierte el contenedor del banner en un contenedor de cuadrícula (grid). */
     grid-template-columns: 60% 40%; /* Define dos columnas en la cuadrícula: la primera columna ocupa el 70% del ancho disponible y la segunda columna ocupa el 30%. */
     border-bottom: var(--border); /* Aplica el borde definido en la variable CSS --border al borde inferior del contenedor del banner. */
-    padding: 50px; /* Agrega un espacio de 50 píxeles debajo del contenido del banner. */
+    padding: 20px; /* Agrega un espacio de 50 píxeles debajo del contenido del banner. */
     min-height: calc(100vh); /* Establece la altura mínima del contenedor del banner para que sea igual a la altura completa de la ventana gráfica (viewport). */
     align-items: center; /* opcional, centra verticalmente si lo necesitas */
 }
@@ -72,6 +72,16 @@
     transition: 0.5s; /* Aplica una transición suave de 0.5 segundos para cualquier cambio en las propiedades del elemento de la lista. */
 }
 
+.find ul li a {
+    display: flex; /* Utiliza un contenedor flexible para el enlace dentro de cada elemento de la lista, permitiendo una disposición en línea de su contenido. */
+    align-items: center; /* Centra verticalmente el contenido dentro del enlace. */
+    justify-content: center; /* opcional si quieres centrar en horizontal también */
+    width: 100%; /* Establece el ancho del enlace para que ocupe todo el ancho del elemento de la lista. */
+    height: 100%; /* Establece la altura del enlace para que ocupe toda la altura del elemento de la lista. */
+    gap: 8px; /* separa icono y texto */
+}
+
+
 .find ul li:hover{
     background-image: var(--gradient); /* Aplica el gradiente definido en la variable CSS --gradient como fondo del elemento de la lista cuando se pasa el cursor sobre él. */
 }
@@ -86,7 +96,7 @@
 }
 
 .banner .avatar img{
-    width: 90%; /* Establece el ancho de la imagen del avatar dentro del contenedor del banner al 90% del ancho del contenedor padre. */
+    width: 70%; /* Establece el ancho de la imagen del avatar dentro del contenedor del banner al 90% del ancho del contenedor padre. */
 }
 
 .banner .avatar{
