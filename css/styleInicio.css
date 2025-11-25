@@ -129,3 +129,14 @@
     }
 }
 
+.dark .banner .content h1{
+    color: var(--text-color); /* Establece el color del texto del encabezado h1 dentro del contenedor .content en el banner a blanco (#fff) en modo oscuro. */
+}
+
+.dark .banner .content p{
+    color: var(--light-text); /* Establece el color del texto del párrafo dentro del contenedor .content en el banner a un tono claro en modo oscuro. */
+}
+
+.dark .banner .content .find h3{
+    color: var(--light-text); /* Establece el color del texto del encabezado h3 dentro del contenedor .find en el banner a blanco (#fff) en modo oscuro. */
+}
