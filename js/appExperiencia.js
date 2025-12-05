@@ -12,9 +12,9 @@ prevDom.onclick = function(){
     showSlider('prev');
 }
 
-let timeRunning = 3000;
-let timeAutoNext = 15000;
-let runTimeOut;
+let timeRunning = 3000; // Duración de la animación en milisegundos
+let timeAutoNext = 15000000000; // Tiempo para avanzar automáticamente al siguiente elemento
+let runTimeOut; // Variable para almacenar el temporizador de la animación
 
 let runAutoRun = setTimeout(()=>{
     nextDom.click();

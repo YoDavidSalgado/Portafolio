@@ -13,6 +13,7 @@ body{ /* Estilos globales para el cuerpo del documento */
     --main-color-hover: hsl(var(--main-hue), 77%, 48%); /* Variante del color principal para efectos de hover (cuando pasas el mouse). Menor saturación y luminosidad → se ve un poco más oscuro que --main-color. */
     --light-main-color: hsl(var(--main-hue), 91%, 55%); /* Variante más clara del color principal */
     --text-color: #000; /* Color del texto */
+    --text-color-second: #eee; /* Color del texto secundario*/
     --nav-color: hsl(var(--main-hue), 17%, 79%); /* Color de la navegación */
     --bg-color: #eaeaea; /* Color de fondo */
     --light-text-color: #9CA7B6; /* Color del texto en estado claro */
